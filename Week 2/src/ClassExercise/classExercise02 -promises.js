@@ -38,14 +38,23 @@ const multiplication = (x, y) => {
   return x * y;
 };
 
-const division = (x, y) => {
+const divide = (x, y) => {
   if (y === 0) {
-    throw new Error("Cannot divide with 0");
+    throw new Error("Cannot divide by zero");
   }
   return x / y;
 };
 
-calculate(5, 4, add)
+(async () => {
+  try {
+    const result = await calculate(10, 5, divide);
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+})();
+
+/* calculate(5, 4, add)
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
 
@@ -59,4 +68,4 @@ calculate(5, 4, division)
 
 calculate(5, 4, substraction)
   .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+  .catch((error) => console.log(error)); */
