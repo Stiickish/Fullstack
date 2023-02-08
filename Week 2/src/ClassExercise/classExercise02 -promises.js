@@ -1,4 +1,6 @@
-const calculate = (x, y, operation) => {
+
+//Using promises
+/* const calculate = (x, y, operation) => {
   return new Promise((resolve, reject) => {
     try {
       const result = operation(x, y);
@@ -7,6 +9,17 @@ const calculate = (x, y, operation) => {
       reject(error);
     }
   });
+}; */
+
+
+// using Async/Await
+const calculate = async (x, y, operation) => {
+  try {
+    const result = operation(x, y);
+    return result;
+  } catch (error) {
+    throw error;
+  }
 };
 
 const add = (x, y) => {
@@ -43,3 +56,5 @@ calculate(5, 4, division)
 calculate(5, 4, substraction)
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
+
+
