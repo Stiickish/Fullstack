@@ -16,16 +16,13 @@ console.log(operateOnNumbers(add, 3, 4)); // 7
 console.log(operateOnNumbers(multiply, 3, 4)); // 12
 console.log(operateOnNumbers((x, y) => x - y, 3, 4));
 
-function testWithThreeParameters(cb, cb2, array) {
-  const result = [];
-
+function testWithThreeParameters(cb1, cb2, array) {
+  const returnedArray = [];
   for (let i = 0; i < array.length; i++) {
-    let element = array[i];
-    let element1 = cb(element);
-    let element2 = cb2(element1);
-    result.push(element2);
+    const element = array[i];
+    const liftedNumber = cb1[element];
+    const liftedNumberDivided = cb2[liftedNumber];
+    returnedArray.push(liftedNumberDivided);
   }
-  return result;
+  return returnedArray;
 }
-
-console.log(testWithThreeParameters(multiply, add, numbers));
