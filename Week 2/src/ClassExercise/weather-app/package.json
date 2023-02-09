@@ -2,10 +2,10 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "",
-  "main": "classExercise03 -weather.js",
+  "main": "weather.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server classExercise03 -weather.js"
+    "start": "lite-server weather.js"
   },
   "keywords": [],
   "author": "",

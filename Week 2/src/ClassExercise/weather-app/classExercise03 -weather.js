@@ -1,4 +1,4 @@
-//Get the user's location
+/* //Get the user's location
 const { Navigator } = require("node-navigator");
 const navigator = new Navigator();
 
@@ -38,3 +38,4 @@ getLocation(function (coords) {
     console.log(weather);
   });
 });
+ */
