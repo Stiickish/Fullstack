@@ -1,0 +1,18 @@
+[2023-03-08T11:18:58.245] [DEBUG] default - Some debug messages
+[2023-03-08T11:18:58.248] [INFO] default - Some info messages
+[2023-03-08T11:18:58.248] [WARN] default - Some warning messages
+[2023-03-08T11:18:58.249] [ERROR] default - Some error messages
+[2023-03-08T11:18:58.249] [FATAL] default - Some fatal messages
+[2023-03-08T11:19:03.526] [INFO] default - The path you are trying to reach is not defined
+[2023-03-08T11:19:03.577] [INFO] default - The path you are trying to reach is not defined
+[2023-03-08T11:19:16.799] [INFO] default - The path you are trying to reach is not defined
+[2023-03-08T11:19:16.864] [INFO] default - The path you are trying to reach is not defined
+[2023-03-08T11:19:18.754] [INFO] default - The path you are trying to reach is not defined
+[2023-03-08T11:28:13.233] [DEBUG] default - Some debug messages
+[2023-03-08T11:28:13.235] [INFO] default - Some info messages
+[2023-03-08T11:28:13.235] [WARN] default - Some warning messages
+[2023-03-08T11:28:13.236] [ERROR] default - Some error messages
+[2023-03-08T11:28:13.236] [FATAL] default - Some fatal messages
+[2023-03-08T11:28:17.221] [INFO] default - The path you are trying to reach is not defined
+[2023-03-08T11:28:21.129] [INFO] default - Date: 2023 3 8
+[2023-03-08T11:28:21.195] [INFO] default - The path you are trying to reach is not defined
