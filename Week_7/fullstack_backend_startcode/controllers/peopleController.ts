@@ -2,12 +2,12 @@ import express = require('express');
 import logger from '../utility/logger';
 import Person from '../models/peopleModel';
 
-type Person = {
+/* type Person = {
   id: string;
   name: string;
   age: number;
   city: string;
-};
+}; */
 
 export const getAllPersons = async (
   req: express.Request,
@@ -49,11 +49,11 @@ export const createPerson = async (
 
 export const getPerson = async (req: express.Request, res: express.Response) => {
   try {
-    const car = await Person.findById(req.params.id);
+    const person = await Person.findById(req.params.id);
 
     res.status(200).json({
       status: 'succes',
-      data: car,
+      data: person,
     });
     logger.info('Here is the person you requested');
   } catch {
