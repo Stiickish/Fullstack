@@ -1,6 +1,4 @@
 import mongoose from 'mongoose';
-import slugify from 'slugify';
-import { setFlagsFromString } from 'v8';
 
 const mechanicSchema = new mongoose.Schema({
   firstname: {
